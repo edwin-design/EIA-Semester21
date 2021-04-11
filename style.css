@@ -1,0 +1,101 @@
+body {
+
+    background-image: url(Fotos/bg.png);
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+main {
+    margin: auto;
+    margin-top: 600px;
+    width: 800px;
+}
+
+header {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50pt;
+    text-align: center;
+    background-color: rgb(97, 15, 15);
+    margin: auto;
+    margin-top: 100px;
+    top: -100px;
+    height: 400px;
+    width: 800px;
+    border-radius: 0 0 400px 400px;
+    position: relative;
+}
+
+.text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    margin-left: 250px;
+    text-align: center;
+    margin-top: -75px;
+}
+
+#fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fbicon {
+    
+}
+
+/* mouse over link */
+img:hover {
+    background-color: blue;
+}
+
+ul {
+    position: sticky;
+    list-style-type: none;
+    margin: auto;
+    margin-right: 550px;
+    width: 190px;
+    margin-top: -500px;
+    top: 0px;
+    padding: 8px;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 0% 0% 15px 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+li {
+    float: left;
+    border-right: 2px solid white;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.aktiv {
+    color: red;
+}
+
+li a:hover:not(.aktiv) {
+    color: rgb(185, 114, 59);
+}
+
+h2 {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
