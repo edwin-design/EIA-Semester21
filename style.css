@@ -42,10 +42,6 @@ header {
     align-items: center;
 }
 
-.fbicon {
-    
-}
-
 /* mouse over link */
 img:hover {
     background-color: blue;
