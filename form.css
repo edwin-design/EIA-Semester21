@@ -1,0 +1,48 @@
+.background {
+    background-image: url(Aufgabe4/bg3.png);
+    background-repeat: repeat;
+}
+
+.karte {
+    margin: auto;
+    margin-top: 10%;
+    width: fit-content;
+}
+
+input[type=text], select {
+    margin: 7px 0px;
+    display: inline-block;
+    background-color: seashell;
+    border: 1px solid seagreen;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+label {
+    color: papayawhip;
+    font-size: 22px;
+}
+
+form {
+    margin-top: -380px;
+    margin-left: 40px;
+}
+
+#deinname {
+    width: fit-content;
+}
+
+#greetings {
+    width: 70%;
+    height: 60px;
+}
+
+p {
+    color: papayawhip;
+    font-size: 22px;
+}
+
+h1 {
+    color: wheat;
+    font-size: 32px;
+}

@@ -1,0 +1,60 @@
+.background {
+    background-image: url(Aufgabe4/bg5.png);
+    background-repeat: repeat;
+}
+
+.karte {
+    margin: auto;
+    margin-top: 10%;
+    width: fit-content;
+}
+
+#muschel1 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -120px;
+    z-index: 1;
+}
+
+#muschel2 {
+    position: absolute;
+    margin-top: 280px;
+    margin-left: -500px;
+    z-index: 1;
+}
+
+#muschel3 {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: -320px;
+    z-index: 1;
+}
+
+#baum {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -275px;
+}
+
+#stern {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: -145px;
+    z-index: 1;
+}
+
+h1 {
+    color: oldlace;
+    font-size: 32px;
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 50px;
+    z-index: 1;
+}
+
+p {
+    color: oldlace;
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 70px;
+}

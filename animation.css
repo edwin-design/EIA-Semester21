@@ -1,0 +1,68 @@
+.background {
+    background-image: url(Aufgabe4/bg7.png);
+    background-repeat: repeat;
+}
+
+.karte {
+    margin: auto;
+    margin-top: 10%;
+    width: fit-content;
+}
+
+#band {
+    position: absolute;
+    margin-top: 280px;
+    margin-left: -230px;
+    z-index: 1;
+    width: 227px;
+    height: 122px;
+}
+
+.muschel {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -400px;
+    width: 70px;
+    height: 64px;
+    z-index: 1;
+    animation-name: muschelfall;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.165, 0.2, 0.15, 0.13);
+    }
+
+@keyframes muschelfall {
+    0% {margin-top: 20px; margin-left: -120px; opacity: 1; transform: rotate(-40deg);}
+    25% {margin-top: 70px; margin-left: -110px; opacity: 0.8; transform: rotate(-10deg);}
+    50% {margin-top: 140px; margin-left: -130px; opacity: 0.6; transform: rotate(20deg);}
+    75% {margin-top: 210px; margin-left: -110px; opacity: 0.4; transform: rotate(50deg);}
+    100% {margin-top: 290px; margin-left: -130px; opacity: 0.2; transform: rotate(80deg);}
+}
+
+.muscheloffen {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -400px;
+    width: 70px;
+    height: 64px;
+    z-index: 1;
+    animation-name: muscheloffenfall;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.04, 0.07, 0.07, 0.04);
+}
+
+@keyframes muscheloffenfall {
+    0% {margin-top: 90px; margin-left: -420px; transform: scale(0.5); opacity: 0.6;}
+    25% {margin-top: 140px; margin-left: -410px; transform: scale(0.6); opacity: 0.7;}
+    50% {margin-top: 190px; margin-left: -430px; transform: scale(0.7); opacity: 0.8;}
+    75% {margin-top: 260px; margin-left: -410px; transform: scale(0.8); opacity: 0.9;}
+    100% {margin-top: 290px; margin-left: -430px; transform: scale(1); opacity: 1;}
+}
+
+h1 {
+    color: paleturquoise;
+    font-size: 32px;
+    text-align: center;
+    margin-top: -300px;
+}

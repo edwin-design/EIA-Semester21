@@ -1,0 +1,26 @@
+.background {
+    background-image: url(Aufgabe4/bg6.png);
+    background-repeat: repeat;
+}
+
+.karte {
+    margin: auto;
+    margin-top: 10%;
+    width: fit-content;
+}
+
+iframe {
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -575px;
+    display: inline-block;
+}
+
+#band {
+    position: absolute;
+    margin-top: 280px;
+    margin-left: -230px;
+    z-index: 1;
+    width: 227px;
+    height: 122px;
+}

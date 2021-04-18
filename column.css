@@ -1,0 +1,40 @@
+.background {
+    background-image: url(Aufgabe4/bg4.png);
+    background-repeat: repeat;
+}
+
+.karte {
+    margin: auto;
+    margin-top: 10%;
+    width: fit-content;
+}
+
+#oben {
+    position: absolute;
+    margin-top: -255px;
+    margin-left: 80px;
+    column-count: 3;
+    column-gap: 15px;
+    color: whitesmoke;
+    font-size: 15px;
+    width: 440px;
+}
+
+#unten {
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 90px;
+    column-count: 2;
+    column-gap: 20px;
+    color: whitesmoke;
+    font-size: 15px;
+    width: 440px;
+}
+
+h1 {
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 240px;
+    font-size: 32px;
+    color: snow;
+}

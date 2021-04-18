@@ -1,0 +1,68 @@
+.background {
+    background-image: url(Aufgabe4/bg2.png);
+    background-repeat: repeat;
+}
+
+.karte {
+    margin: auto;
+    margin-top: 10%;
+    width: fit-content;
+}
+
+.muschel1 {
+    width: 70px;
+    height: 64px;
+    background: url("Aufgabe4/muschel.png") no-repeat;
+    margin-top: 250px;
+    margin-left: -500px;
+    position: absolute;    
+    display: inline-block; 
+}
+
+.muschel2 {
+    width: 70px;
+    height: 64px;
+    background: url("Aufgabe4/muschel.png") no-repeat;
+    margin-top: 200px;
+    margin-left: -337.5px;
+    position: absolute;    
+    display: inline-block;
+}
+
+.muschel3 {
+    width: 70px;
+    height: 64px;
+    background: url("Aufgabe4/muschel.png") no-repeat;
+    margin-top: 250px;
+    margin-left: -175px;
+    position: absolute;    
+    display: inline-block;
+}
+
+.muschel1:hover {
+    background-image: url(Aufgabe4/muschel_perle.png);
+}
+
+.muschel2:hover {
+    background-image: url(Aufgabe4/muschel_perle.png);
+}
+
+.muschel3:hover {
+    background-image: url(Aufgabe4/muschel_perle.png);
+}
+
+h1 {
+    color: mediumorchid;
+    position: absolute;
+    font-size: 38px;
+    margin-top: -340px;
+    margin-left: 200px;
+}
+
+p {
+    color: purple;
+    position: absolute;
+    font-size: 22px;
+    margin-top: -270px;
+    margin-left: 120px;
+}
