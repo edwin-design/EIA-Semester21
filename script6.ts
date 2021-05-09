@@ -14,7 +14,7 @@ var australia2018: number = 2100.5;
 var europe2008: number = 4965.7;
 var europe2018: number = 4209.3;
 var northamerica2008: number = 6600.4;
-var northamerica2018: number = 6035,6;
+var northamerica2018: number = 6035.6;
 var southamerica2008: number = 1132.6;
 var southamerica2018: number = 1261.5;
 
