@@ -1,0 +1,110 @@
+button {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+#first {
+    background-image: linear-gradient(#0000cd, #7b68ee);
+    position: relative;
+    margin-bottom: 3px;
+    border: none;
+}
+
+#second {
+    background-image: linear-gradient(#0000cd, #7b68ee);
+    position: relative;
+    border: none;
+}
+
+#third {
+    background-image: linear-gradient(#0000cd, #7b68ee);
+    position: relative;
+    border: none;
+
+}
+
+#fourth {
+    background-image: linear-gradient(#ff69b4, #ffb6c1);
+    position: relative;
+    margin-bottom: 3px;
+    border: none;
+}
+
+#fifth {
+    background-image: linear-gradient(#ff69b4, #ffb6c1);
+    position: relative;
+    border: none;
+}
+
+#sixth {
+    background-image: linear-gradient(#ff69b4, #ffb6c1);
+    position: relative;
+    border: none;
+}
+
+#seventh {
+    background-image: linear-gradient(#ff69b4, #ffb6c1); 
+    position: relative;
+    
+    border: none;
+}
+
+#eighth {
+    background-image: linear-gradient(#ff8c00,#fcb430);
+    position: relative;
+    border: none;
+}
+
+#ninth {
+    background-image: linear-gradient(#ff8c00,#fcb430);
+    position: relative;
+    border: none;
+}
+#allButtons {
+    margin: auto;
+    margin-top: 10%;
+    height: 500px;
+    width: 500px;    
+}
+
+#play {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+body {
+    background-color: black;
+}
+
+.fas {
+    color: lightslategrey;
+    font-size: 60px;
+    margin-top: 60px;
+    margin-left: 15px;
+    padding: 20px;
+
+}
+
+#playIcon {
+    position: absolute;
+}
+
+#pauseIcon {
+    position: absolute;
+}
+
+#distance {
+    margin-left: 100px;
+}
+
+.is_hidden {
+    display: none !important;
+}
+
+
+
+    
