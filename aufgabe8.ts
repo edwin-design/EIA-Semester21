@@ -1,6 +1,10 @@
 namespace Aufgabe8 {
+
+  
+
   window.addEventListener("load", function (): void {
     var sounds: HTMLAudioElement[] = [new Audio("../Aufgabe7/kick.mp3"), new Audio("../Aufgabe7/hihat.mp3"), new Audio("../Aufgabe7/snare.mp3"), new Audio("../Aufgabe7/hihat.mp3"), new Audio("../Aufgabe7/A.mp3"), new Audio("../Aufgabe7/C.mp3"), new Audio("../Aufgabe7/F.mp3"), new Audio("../Aufgabe7/G.mp3"), new Audio("../Aufgabe7/laugh1.mp3"), new Audio("../Aufgabe7/laugh2.mp3")];
+    var beat: HTMLAudioElement[] = [sounds[5], sounds[8], sounds[4]];
     var index: number = 0;
     document.querySelector("#first").addEventListener("click", function (): void { playSample(sounds[0]); });
     document.querySelector("#second").addEventListener("click", function (): void { playSample(sounds[1]); });
@@ -16,7 +20,7 @@ namespace Aufgabe8 {
       
      }
       
-    document.querySelector("#playIcon").addEventListener("click", function (): void {
+     document.querySelector("#playIcon").addEventListener("click", function (): void {
       var interval: number = setInterval(function (): void {
               sounds[index].play();
               index += 1;
@@ -27,7 +31,6 @@ namespace Aufgabe8 {
               });
           },                             250);
       });
-
    
     
         
@@ -43,9 +46,16 @@ namespace Aufgabe8 {
         document.getElementById("playIcon").classList.remove("is_hidden");
       });
 
-      document.getElementById("trashIcon").addEventListener("click", function(): void {
-        sounds.length = 0;
-      } );
+      var trashIcon: HTMLElement = document.getElementById("trashIcon");
+    trashIcon.addEventListener("click", function (): void {
+        clearInterval(interval);
+        beat.length = 0;
+        console.log(trashIcon);
+        if (beat.length == 0) {
+            document.getElementById("playIcon").classList.remove("hidden");
+            document.getElementById("pauseIcon").classList.add("hidden");
+        }
+    });
       
   
    
@@ -53,49 +63,33 @@ namespace Aufgabe8 {
     
 
 
-    var remixBeat: number[] = [];
-    var indexRemix: number = 0;
-    var min: number = 0;
-    var max: number = 9;
-    
+      var randomIcon: HTMLElement = document.getElementById("randomIcon");
+      randomIcon.addEventListener("click", function (): void {
+          beat.length = 0;
+          console.log(beat);
   
-    for (let index: number = 0; index < sounds.length; index++) {
-    
-        var zufallsZahl: number = Math.round((Math.random() * (max - min)) + min);
-
-        remixBeat.push(zufallsZahl);
-      }
-    function remixButton (remix: HTMLAudioElement= new Audio): void {
-      remix.play();
-      }
-    
-    document.getElementById("randomIcon").addEventListener("click", function (): void { 
-      var intervalRemix: number = setInterval(function (): void {
-        sounds[indexRemix].play();
-        indexRemix += 1;
-        if (indexRemix > 9)
-        indexRemix = 0;
+  
+          while (beat.length < 3) {
+              var audioElement: HTMLAudioElement = sounds[Math.floor(Math.random() * sounds.length)];
+              if (beat.indexOf(audioElement) === -1) beat.push(audioElement);
+              console.log(beat);
+          }
+  
+  
+  
+  
+  
+  
         
-        
-        
-      }
-
-       
-     
-    
-
-    
-
-
+  
+  
+  
+  
       });
-
-      
-
-      
-      
-      
-
-
-
-    }
-      
+  
+  
+  
+  
+  }
+  
+)
