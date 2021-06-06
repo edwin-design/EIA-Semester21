@@ -85,3 +85,7 @@ main {
 .trash:hover {
     color: black;
 }
+
+#spracheingabe {
+    font-weight: 700;
+}
